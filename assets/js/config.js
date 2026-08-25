@@ -63,7 +63,7 @@ window.INVITATION_CONFIG = {
     introVideo: "./media/intro-placeholder.mp4",
     introPoster:
       "./media/intro-placeholder.webp",
-    music: "./media/music-placeholder.mp3",
+    music: "./media/bismillah.mp3",
 
     // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
