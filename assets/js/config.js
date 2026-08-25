@@ -109,9 +109,9 @@ window.INVITATION_CONFIG = {
   ],
 
   venue: {
-    name: "Hyatt Regency",
+    name: "Noor Invites",
     address:
-      "Anna Salai, Teynampet, Chennai",
+      "Mahal, Nagpur",
     mapUrl: "https://maps.app.goo.gl/9SjDC3RRg9jHZty59",
   },
 
