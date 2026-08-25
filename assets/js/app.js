@@ -107,6 +107,8 @@ Object.entries(config.theme).forEach(([name, value]) => {
     audio.src = config.media.music;
     video.poster = config.media.introPoster;
     videoSource.src = config.media.introVideo;
+    video.muted = true;
+    video.volume = 0;
     video.load();
 
     renderProgram();
