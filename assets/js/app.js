@@ -67,11 +67,11 @@ document.addEventListener("dragstart", (event) => {
       || config.couple.groom.name.split(" ")[0];
 
     element.replaceChildren(
-      document.createTextNode(brideName),
+      document.createTextNode(groomName),
       document.createTextNode(" "),
       createElement("span", "", "&"),
       document.createTextNode(" "),
-      document.createTextNode(groomName),
+      document.createTextNode(brideName),
     );
   }
 
@@ -191,6 +191,7 @@ function renderPreWeddingEvents() {
 
   function renderDressPalette() {
     const palette = select("#dressPalette");
+    if (!palette) return;
 
     config.dressCode.swatches.forEach((color, index) => {
       const swatch = createElement("i");
@@ -207,6 +208,9 @@ let touchStartY = 0;
 function renderGallery() {
   const slides = select("#gallerySlides");
   const dots = select("#galleryDots");
+  const frame = select("#galleryFrame");
+
+  if (!slides || !dots || !frame) return;
 
   config.media.gallery.forEach((image, index) => {
     const figure = createElement(
@@ -238,8 +242,6 @@ function renderGallery() {
 
     dots.append(dot);
   });
-
-  const frame = select("#galleryFrame");
 
   frame.addEventListener("pointerdown", (event) => {
     touchStartX = event.clientX;

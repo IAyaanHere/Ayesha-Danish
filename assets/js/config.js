@@ -42,7 +42,7 @@ window.INVITATION_CONFIG = {
       "As they begin their forever in faith and love.",
     welcomeTitle: "Moments, Softly Held",
     welcomeBody:
-      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of their families, Sumbul Ayesha Siddiqui and Huzaifa Danish Khan begin their journey together in faith and love.",
+      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of their families, Huzaifa Danish Khan and Sumbul Ayesha Siddiqui begin their journey together in faith and love.",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
     closing: "We can't wait to celebrate with you.",
@@ -65,22 +65,22 @@ window.INVITATION_CONFIG = {
     introVideo: "./media/intro-placeholder.mp4",
     introPoster:
       "./media/intro-placeholder.webp",
-    music: "./media/bismillah.mp3",
+    music: "./media/shukran-laka-rabbi.mp3",
 
     // Replace gallery URLs with your own hosted files or image URLs.
     gallery: [
       {
-        src: "./media/gallery/01.png",
+        src: "./media/gallery/01.webp",
         alt: "A softly lit wedding detail",
         caption: "",
       },
       {
-        src: "./media/gallery/02.png",
+        src: "./media/gallery/02.webp",
         alt: "A joyful wedding celebration",
         caption: "",
       },
       {
-        src: "./media/gallery/03.png",
+        src: "./media/gallery/03.webp",
         alt: "Elegant wedding florals and table setting",
         caption: "",
       },
