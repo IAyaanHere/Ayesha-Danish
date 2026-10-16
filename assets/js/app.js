@@ -59,12 +59,19 @@ document.addEventListener("dragstart", (event) => {
   }
 
   function setCoupleNames(element) {
+    const brideName = config.couple.bride.signatureName
+      || config.couple.bride.shortName
+      || config.couple.bride.name.split(" ")[0];
+    const groomName = config.couple.groom.signatureName
+      || config.couple.groom.shortName
+      || config.couple.groom.name.split(" ")[0];
+
     element.replaceChildren(
-      document.createTextNode(config.couple.bride.shortName || config.couple.bride.name.split(" ")[0]),
+      document.createTextNode(brideName),
       document.createTextNode(" "),
       createElement("span", "", "&"),
       document.createTextNode(" "),
-      document.createTextNode(config.couple.groom.shortName || config.couple.groom.name.split(" ")[0]),
+      document.createTextNode(groomName),
     );
   }
 
@@ -157,22 +164,26 @@ function renderPreWeddingEvents() {
 
     const location = createElement("small", "", event.location);
 
-    const mapLink = createElement(
-      "a",
-      "event-map-link",
-      "View on Google Maps"
-    );
-
-    mapLink.href = event.mapLink;
-    mapLink.target = "_blank";
-    mapLink.rel = "noreferrer";
-
     article.append(
       title,
       dateTime,
-      location,
-      mapLink
+      location
     );
+
+    // Only render the map link when a URL has been supplied.
+    if (event.mapLink) {
+      const mapLink = createElement(
+        "a",
+        "event-map-link",
+        "View on Google Maps"
+      );
+
+      mapLink.href = event.mapLink;
+      mapLink.target = "_blank";
+      mapLink.rel = "noreferrer";
+
+      article.append(mapLink);
+    }
 
     eventList.append(article);
   });

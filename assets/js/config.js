@@ -7,25 +7,27 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Zoya & Zaid — Nikah Invitation",
+    title: "Sumbul Ayesha & Huzaifa Danish — Wedding Invitation",
     description:
-      "You are warmly invited to celebrate the Nikah of Zoya Khan and Shaikh Zaid.",
+      "You are warmly invited to celebrate the Nikah & Reception of Sumbul Ayesha Siddiqui and Huzaifa Danish Khan.",
   },
 
   couple: {
-    brideInitial: "Z",
-    groomInitial: "Z",
+    brideInitial: "S",
+    groomInitial: "H",
     bride: {
-      name: "Zoya Khan",
-      shortName: "Zoya",
+      name: "Sumbul Ayesha Siddiqui",
+      shortName: "Sumbul Ayesha",
+      signatureName: "Ayesha",
       relation: "Daughter of",
-      parents: "Rashid Khan & Farida Begum",
+      parents: "Mr. Haji Zameer Ahmad Siddiqui",
     },
     groom: {
-      name: "Shaikh Zaid",
-      shortName: "Zaid",
+      name: "Huzaifa Danish Khan",
+      shortName: "Huzaifa Danish",
+      signatureName: "Danish",
       relation: "Son of",
-      parents: "Shaikh Tariq & Shabana Begum",
+      parents: "Late Mr. Mazhar Khan",
     },
   },
 
@@ -33,28 +35,28 @@ window.INVITATION_CONFIG = {
     bismillah: "﷽",
     bismillahTranslation:
       "",
-    welcomeLine: "We request the honour of your\npresence at the Nikah of",
+    welcomeLine: "With the blessings of their families,\nwe joyfully invite you to the wedding of",
     invitation:
       "",
     heroClosing:
-      "as they begin their forever in\nfaith and love.",
-    welcomeTitle: "A Blessed Beginning",
+      "As they begin their forever in faith and love.",
+    welcomeTitle: "Moments, Softly Held",
     welcomeBody:
-      "With hearts full of gratitude, we warmly invite you to join us as we celebrate this beautiful beginning with the love, prayers, and blessings of our families.",
+      "Two families, one beautiful beginning, and a lifetime of memories waiting to unfold. With the blessings of their families, Sumbul Ayesha Siddiqui and Huzaifa Danish Khan begin their journey together in faith and love.",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
-    closing: "We can’t wait to celebrate with you.",
+    closing: "We can't wait to celebrate with you.",
     dua: "بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
     duaTranslation:
       "May Allah bless you both, shower His blessings upon you, and join you together in goodness.",
   },
 
   wedding: {
-    // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2026-10-18T19:00:00+05:30",
-    date: "October 18, 2026",
-    day: "Sunday",
-    time: "07:00 PM",
+    // Countdown targets the Reception — November 12, 2026 at 7:00 PM IST.
+    isoDate: "2026-11-12T19:00:00+05:30",
+    date: "November 12, 2026",
+    day: "Thursday",
+    time: "07:00 PM onwards",
     timezone: "IST",
   },
 
@@ -85,40 +87,36 @@ window.INVITATION_CONFIG = {
     ],
   },
 
+  // Wedding-day programme (timeline section)
   program: [
     {
-      time: "6:30 PM",
-      title: "Guest Arrival",
-      note: "",
+      time: "November 11",
+      title: "Haldi",
+      note: "12:00 PM · V.C. FARMS, Dighori, Nagpur · A beautiful afternoon of family, blessings, and celebration.",
     },
     {
-      time: "07:00 PM",
-      title: "Nikah Ceremony",
-      note: "Solemnisation & duas",
+      time: "November 11",
+      title: "Nikah & Rukhsati",
+      note: "Evening · V.C. FARMS, Dighori, Nagpur · The beginning of a new journey together, with duas and the blessings of loved ones.",
     },
     {
-      time: "07:30 PM",
-      title: "Blessings",
-      note: "Family greetings & photographs",
-    },
-    {
-      time: "08:00 PM",
-      title: "Dinner",
-      note: "A feast shared with love",
+      time: "November 12",
+      title: "Reception",
+      note: "7:00 PM onwards · V.C. FARMS, Dighori, Nagpur · An evening of togetherness, heartfelt wishes, and celebration.",
     },
   ],
 
   venue: {
-    name: "Noor Invites",
+    name: "V.C. FARMS",
     address:
-      "Mahal, Nagpur",
-    mapUrl: "https://maps.app.goo.gl/9SjDC3RRg9jHZty59",
+      "Near Challenger Gym-2, Behind Indian Oil Petrol Pump, Dighori, Nagpur.",
+    mapUrl: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
   },
 
 dressCode: {
-  title: "Festive Formal",
+  title: "Festive Traditional",
   description:
-    "Traditional or formal attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, suits, and formal dresses are all welcome. We kindly ask guests to avoid overly casual attire and white or ivory.",
+    "Traditional and festive attire is welcome as we come together to celebrate this special occasion with family and loved ones.",
   swatches: [
     "#7A1F2B",
     "#234638",
@@ -128,39 +126,40 @@ dressCode: {
   ],
 },
 
+  // Pre-wedding & additional functions shown in the event cards section
   preWeddingEvents: [
     {
-      name: "Mehendi",
-      date: "October 15",
-      time: "4:00 PM",
-      location: "Bride’s Residence",
-      mapLink: "https://maps.app.goo.gl/c4WZJk71NhKc7CDGA",
+      name: "Haldi",
+      date: "November 11, 2026",
+      time: "12:00 PM",
+      location: "V.C. FARMS, Dighori, Nagpur",
+      mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
     },
     {
-      name: "Qawwali Evening",
-      date: "October 17",
-      time: "7:00 PM",
-      location: "Groom's Residence",
-      mapLink: "https://maps.app.goo.gl/c4WZJk71NhKc7CDGA",
+      name: "Nikah & Rukhsati",
+      date: "November 11, 2026",
+      time: "Evening",
+      location: "V.C. FARMS, Dighori, Nagpur",
+      mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
     },
     {
-      name: "Walima",
-      date: "October 19",
-      time: "7:30 PM",
-      location: "Blue Lagoon, ECR, Chennai",
-      mapLink: "https://maps.app.goo.gl/VY3FM2kntM26syuJ8",
+      name: "Reception",
+      date: "November 12, 2026",
+      time: "7:00 PM onwards",
+      location: "V.C. FARMS, Dighori, Nagpur",
+      mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
     },
   ],
 
   rsvp: {
-    deadline: "Kindly respond by September 15, 2026",
-    contact: "For assistance, call +91 98765 43210",
+    deadline: "Kindly respond at your earliest convenience",
+    contact: "For assistance, please reach out to the family",
     fields: {
       name: "Your full name",
       email: "Email address",
       attendance: ["Joyfully accepts", "Regretfully declines"],
       guests: ["1 guest", "2 guests", "3 guests", "4 guests"],
-      note: "Dietary notes or a message for the couple",
+      note: "A message for the couple",
     },
   },
 
