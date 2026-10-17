@@ -9,7 +9,7 @@ window.INVITATION_CONFIG = {
   site: {
     title: "Sumbul Ayesha & Huzaifa Danish — Wedding Invitation",
     description:
-      "You are warmly invited to celebrate the Nikah & Reception of Sumbul Ayesha Siddiqui and Huzaifa Danish Khan.",
+      "You are warmly invited to celebrate the Ruksati & Reception of Sumbul Ayesha Siddiqui and Huzaifa Danish Khan.",
   },
 
   couple: {
@@ -96,7 +96,7 @@ window.INVITATION_CONFIG = {
     },
     {
       time: "November 11",
-      title: "Nikah & Rukhsati",
+      title: "Ruksati",
       note: "Evening · V.C. FARMS, Dighori, Nagpur · The beginning of a new journey together, with duas and the blessings of loved ones.",
     },
     {
@@ -136,7 +136,7 @@ dressCode: {
       mapLink: "https://maps.app.goo.gl/HeJCZMPjas1ZKZLk8",
     },
     {
-      name: "Nikah & Rukhsati",
+      name: "Ruksati",
       date: "November 11, 2026",
       time: "Evening",
       location: "V.C. FARMS, Dighori, Nagpur",
